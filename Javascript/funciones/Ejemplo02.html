@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Ejemplo de Funciones</h2>
+  <p id="etiqueta1"></p>
+  <p id="etiqueta2"></p>
+  <script>
+    
+    function suma(a,b) {
+      return (a+b);
+    }
+
+    //Modo #1 de llamada a funciones
+    var resultado = suma(45, 10);    
+    document.getElementById('etiqueta1').innerHTML = 'La suma de 45 + 10 es: ' + resultado;
+
+    //Modo #2 de llamada a funciones
+    document.getElementById('etiqueta2').innerHTML = 'La suma de 3 + 5 es: ' + suma(3,5);
+
+  </script>
+</body>
+</html>

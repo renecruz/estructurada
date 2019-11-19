@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Ejemplo de llamadas a Funciones y Procedimientos</h2>
+  <p id="etiqueta1"></p>
+
+  <script>
+
+    function suma(a, b) {
+      return (a + b);
+    }
+
+    function resta(a, b) {
+      return (a - b);
+    }
+
+    //procedimiento
+    function calcular() {    
+      document.getElementById('etiqueta1').innerHTML = 'La suma de ' + resta(21, 3) + ' + 20 es: ' + suma(resta(21, 3), 20);
+    }
+
+    //llamada a procedimiento
+    calcular();
+
+  </script>
+</body>
+
+</html>

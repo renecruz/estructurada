@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Calculadora v2</h2>
+  Valor A: <input type="text" size="3" id="valorA"/><br/>
+  Valor B: <input type="text" size="3" id="valorB"/><br/>
+  Resultado: <input type="text" size="4" id="resultado"><br/>
+
+  <button type="button" onclick="sumar()"> + </button>
+  <button type="button" onclick="restar()"> - </button>
+  <button type="button" onclick="dividir()"> / </button>
+  <button type="button" onclick="multiplicar()"> * </button>
+
+  <script>
+
+    function suma(a, b) {
+      return (a + b);
+    }
+
+    function resta(a,b) {
+      return (a-b);
+    }
+
+    function divide(a,b) {
+      return (a/b);
+    }
+
+    function multiplica(a,b) {
+      return (a*b);
+    }
+
+    //procedimiento
+    function sumar() {
+      var valorA = parseInt(document.getElementById('valorA').value);
+      var valorB = parseInt(document.getElementById('valorB').value);
+      document.getElementById('resultado').value = suma(valorA, valorB);
+    }
+
+    function restar() {
+      var valorA = parseInt(document.getElementById('valorA').value);
+      var valorB = parseInt(document.getElementById('valorB').value);
+      document.getElementById('resultado').value = resta(valorA, valorB);
+    }
+
+    function dividir() {
+      var valorA = parseInt(document.getElementById('valorA').value);
+      var valorB = parseInt(document.getElementById('valorB').value);
+      document.getElementById('resultado').value = divide(valorA, valorB);
+    }
+
+    function multiplicar() {
+      var valorA = parseInt(document.getElementById('valorA').value);
+      var valorB = parseInt(document.getElementById('valorB').value);
+      document.getElementById('resultado').value = multiplica(valorA, valorB);
+    }
+  </script>
+</body>
+
+</html>
