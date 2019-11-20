@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Arreglos: Ejemplo No. 7</h2>
+  Tu nombre: <input type="text" size="20" id="txtNombre" />
+  <p id="p1"></p>
+  <input type="button" value="Contar caracteres" onclick="contarCaracteres()"/>
+  <script>
+    function contarCaracteres() {
+      var contenido = document.getElementById("txtNombre").value
+      document.getElementById("p1").innerHTML = "El nombre contiene " + contenido.length + " caracteres <br />"
+    }
+    
+  </script>
+</body>
+
+</html>

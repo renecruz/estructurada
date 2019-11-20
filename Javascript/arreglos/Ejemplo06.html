@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Arreglos: Ejemplo No. 6</h2>
+  <p id="p1"></p>
+  <script>
+    var empresas = ["Apple", "Microsoft", "Oracle", "Google", "Amazon"]    
+    var strMensaje = "Elementos separados por cómas: <em>" + empresas.join(", ") + "</em><br />"
+    strMensaje += "Elementos separados por asteriscos: <code>" + empresas.join(" * ") + "</code><br />"
+    strMensaje += "Elementos separados por pipes: <strong>" + empresas.join(" | ") + "</strong><br />"
+    document.getElementById("p1").innerHTML = strMensaje
+  </script>
+</body>
+
+</html>

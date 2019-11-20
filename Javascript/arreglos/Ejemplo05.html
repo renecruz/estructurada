@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Arreglos: Ejemplo No. 5</h2>
+  <p id="p1"></p>
+  <script>
+    var nombre = "René Cruz Flores"
+    var strMensaje = "La variable nombre contiene: " + nombre + "<br />"
+    strMensaje += "Tiene " + nombre.length + " caracteres <br />"
+    for(i=0; i < nombre.length; i++) {
+      strMensaje += "El elemento en el índice " + i + " es: " + nombre[i] + "<br />" 
+    }
+    document.getElementById("p1").innerHTML = strMensaje
+  </script>
+</body>
+
+</html>

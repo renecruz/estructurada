@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Arreglos: Ejemplo No. 4</h2>
+  <p id="p1"></p>
+  <script>
+    var colores = ["Rojo", "Verde", "Azul", "Negro", "Blanco"]
+    var strMensaje = "";
+    for (i = 0; i < colores.length; i++) {
+      strMensaje = strMensaje + "Elemento en el índice " + i + " en el arreglo: " + colores[i] + "<br />"
+    }
+
+    document.getElementById("p1").innerHTML = strMensaje
+  </script>
+</body>
+
+</html>

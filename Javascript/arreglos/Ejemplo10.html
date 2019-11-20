@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Arreglos: Ejemplo No. 10</h2>
+  
+  <p id="p1">Lista: </p>
+  <input type="button" value="Eliminar" onclick="eliminaNombre()"/>
+  <script>
+    var lista = ["Ana", "Juan", "Pedro", "María", "Rosa", "Luis"]
+    var strMensaje = "Lista: <br />" + lista.join("<br />")
+    document.getElementById("p1").innerHTML = strMensaje
+
+    function eliminaNombre() {
+      strMensaje = "Lista: <br />"
+      lista.pop()      
+      for (i=0; i < lista.length; i++) {
+        strMensaje += lista[i] + "<br />"
+      }
+      document.getElementById("p1").innerHTML = strMensaje
+    }
+    
+  </script>
+</body>
+
+</html>

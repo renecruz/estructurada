@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Arreglos: Ejemplo No. 8</h2>
+  Tu nombre: <input type="text" size="20" id="txtNombre" />
+  <p id="p1"></p>
+  <input type="button" value="Invertir caracteres" onclick="invertirCaracteres()"/>
+  <script>
+    function invertirCaracteres() {
+      var contenido = document.getElementById("txtNombre").value
+      var strMensaje = ""
+      for (i = contenido.length - 1; i >= 0; i-- ) {
+        strMensaje += contenido[i]        
+      }
+      document.getElementById("p1").innerHTML = strMensaje
+    }
+    
+  </script>
+</body>
+
+</html>

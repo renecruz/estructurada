@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Arreglos: Ejemplo No. 9</h2>
+  Tu nombre: <input type="text" size="20" id="txtNombre" />
+  <p id="p1">Lista: </p>
+  <input type="button" value="Agregar" onclick="agregarNombre()"/>
+  <script>
+    var lista = []
+    
+    function agregarNombre() {
+      lista.push(document.getElementById("txtNombre").value)
+      var strMensaje = "Lista: <br />"
+      for (i=0; i < lista.length; i++) {
+        strMensaje += "<em>" + lista[i] + "</em><br />"
+      }
+      document.getElementById("p1").innerHTML = strMensaje
+    }
+    
+  </script>
+</body>
+
+</html>
