@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Registros: Ejemplo No. 5 </h2>
+  <p id="p1"></p>
+
+  <script>
+    var personas = [
+      {
+        nombre: 'Juan',
+        apellido: 'Lopez',
+        estatura: 1.72,
+        edad: 34,
+        sexo: 'm'
+      },
+      {
+        nombre: 'Ana',
+        apellido: 'Flores',
+        estatura: 1.55,
+        edad: 28,
+        sexo: 'f'
+      },
+      {
+        nombre: 'Raul',
+        apellido: 'Juárez',
+        estatura: 1.89,
+        edad: 44,
+        sexo: 'm'
+      },
+      {
+        nombre: 'Maria',
+        apellido: 'Mercedes',
+        estatura: 1.60,
+        edad: 35,
+        sexo: 'f'
+      }
+
+    ]
+
+    var strMensaje = 'Datos<p />'
+
+
+    for (i = 0; i < personas.length; i++) {
+      strMensaje += 'Nombre: ' + personas[i].nombre + '<br />'
+      strMensaje += 'Apellido: ' + personas[i].apellido + '<br />'
+      strMensaje += 'Estatura: ' + personas[i].estatura + '<br />'
+      strMensaje += 'Edad: ' + personas[i].edad + '<br />'
+      strMensaje += 'Sexo: ' + personas[i].sexo + '<p />'
+    }
+
+    document.getElementById("p1").innerHTML = strMensaje
+
+  </script>
+
+</body>
+
+</html>

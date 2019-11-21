@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Registros: Ejemplo No. 4 </h2>
+  <p id="p1"></p>
+
+  <script>
+    var persona1 = {
+      nombre: 'Juan',
+      apellido: 'Lopez',
+      estatura: 1.72,
+      edad: 34,
+      sexo: 'm'
+    }
+
+    var persona2 = {
+      nombre: 'Ana',
+      apellido: 'Flores',
+      estatura: 1.55,
+      edad: 28,
+      sexo: 'f'
+    }
+
+    var strMensaje = 'Datos<p />'
+
+    strMensaje += 'Nombre: ' + persona1.nombre + '<br />'
+    strMensaje += 'Apellido: ' + persona1.apellido + '<br />'
+    strMensaje += 'Estatura: ' + persona1.estatura + '<br />'
+    strMensaje += 'Edad: ' + persona1.edad + '<br />'
+    strMensaje += 'Sexo: ' + persona1.sexo + '<p />'
+
+    strMensaje += 'Nombre: ' + persona2.nombre + '<br />'
+    strMensaje += 'Apellido: ' + persona2.apellido + '<br />'
+    strMensaje += 'Estatura: ' + persona2.estatura + '<br />'
+    strMensaje += 'Edad: ' + persona2.edad + '<br />'
+    strMensaje += 'Sexo: ' + persona2.sexo + '<p />'
+
+    document.getElementById("p1").innerHTML = strMensaje
+
+  </script>
+
+</body>
+
+</html>

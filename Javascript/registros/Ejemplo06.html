@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Registros: Ejemplo No. 6 </h2>
+  <p id="p1"></p>
+
+  <script>
+    var personas = [
+      {
+        "id": "1",
+        "employee_name": "Juan P\u00e9rez",
+        "employee_salary": "1000",
+        "employee_age": "31",
+        "profile_image": ""
+      },
+      {
+        "id": "99064",
+        "employee_name": "takeiteasy",
+        "employee_salary": "111",
+        "employee_age": "23",
+        "profile_image": ""
+      },
+      {
+        "id": "99065",
+        "employee_name": "ed0c147c9905@hotmail.com",
+        "employee_salary": "123",
+        "employee_age": "23",
+        "profile_image": ""
+      },
+      {
+        "id": "99066",
+        "employee_name": "e4a7d29dc214@hotmail.com",
+        "employee_salary": "123",
+        "employee_age": "23",
+        "profile_image": ""
+      },
+      {
+        "id": "99067",
+        "employee_name": "2b7d29bb748b@hotmail.com",
+        "employee_salary": "123",
+        "employee_age": "23",
+        "profile_image": ""
+      }
+
+    ]
+
+    var strMensaje = 'Datos<p />'
+    var nombresPropiedades = ["id", "employee_name", "employee_salary", "employee_age", "profile_image"]
+    for (p = 0; p < personas.length; p++) {
+      for (i = 0; i < nombresPropiedades.length; i++) {
+        strMensaje += nombresPropiedades[i] + ": " + personas[p][nombresPropiedades[i]] + "<br />"
+      }
+      strMensaje += "<p />"
+    }
+
+    document.getElementById("p1").innerHTML = strMensaje
+
+  </script>
+
+</body>
+
+</html>

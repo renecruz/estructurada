@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Registros: Ejemplo No. 3 </h2>
+  <p id="p1"></p>
+
+  <script>
+    // Esto no se DEBE hacer, aunque Javascript lo permite, no se debe usar así
+    // ya que rompe con la regla básica de los arreglos referente a que:
+    // "Todos los elementos de un arreglo simple deben ser del mismso tipo",
+    // En este caso, aunque Javascript lo procesa y muestra correctamente, se debe
+    // evitar si se desea mantener el enfoque tradicional de los arreglos (Arrays)
+    var persona1 = ['Juan', 'Lopez', 1.72, 34, 'm']
+
+    document.getElementById("p1").innerHTML = persona1
+  </script>
+
+</body>
+
+</html>

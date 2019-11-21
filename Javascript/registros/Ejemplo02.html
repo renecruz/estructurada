@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Registros: Ejemplo No. 2 </h2>
+  <p id="p1"></p>
+
+  <script>
+    // var miArreglo = ['Juan', 'Ana', 'Raul', 'Maria']
+
+    var nombreJuan = 'Juan'
+    var apellidoJuan = 'Lopez'
+    var estaturaJuan = 1.72
+    var edadJuan = 34
+    var sexoJuan = 'M'
+
+    var strMensaje = ''
+    strMensaje += 'Nombre: ' + nombreJuan + '<br />'
+    strMensaje += 'Apellido: ' + apellidoJuan + '<br />'
+    strMensaje += 'Estatura: ' + estaturaJuan + '<br />'
+    strMensaje += 'Edad: ' + edadJuan + '<br />'
+    strMensaje += 'Sexo: ' + sexoJuan + '<br />'
+
+    document.getElementById("p1").innerHTML = strMensaje
+  </script>
+
+</body>
+
+</html>
